@@ -5,7 +5,7 @@ const body_parser = require("body-parser");
 const contacts = require("./routes");
 var cors = require("cors");
 
-port = process.env.PORT || 3000
+port = process.env.PORT || 5001
 
 var express = require("express");
 var app = express();
