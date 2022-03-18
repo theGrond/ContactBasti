@@ -153,7 +153,7 @@ export default {
     async searcBtnClick() {
       try {
         let result = await axios.get(
-          "http://localhost:3000/contact/search/" + this.search
+          "https://contact0858.herokuapp.com/contact/search/" + this.search
         );
         this.searchResult = result.data;
       } catch (ex) {
@@ -166,7 +166,7 @@ export default {
 
     async deleteContact(id) {
       try {
-        await axios.delete("http://localhost:3000/contact/" + id);
+        await axios.delete("https://contact0858.herokuapp.com/contact/" + id);
         if (this.search != "") {
           await this.searcBtnClick();
         } else {
@@ -181,7 +181,7 @@ export default {
     },
     async getAll() {
       try {
-        let res = await axios.get("http://localhost:3000/contact/getmany");
+        let res = await axios.get("https://contact0858.herokuapp.com/contact/getmany");
         this.searchResult = res.data;
       } catch (e) {
         console.error(e);

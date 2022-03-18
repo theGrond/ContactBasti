@@ -77,7 +77,7 @@ export default {
         alert("All field required");
       } else {
         try {
-          await axios.post("http://localhost:3000/contact", {
+          await axios.post("https://contact0858.herokuapp.com/contact", {
             contactId: this.contactId,
             firstName: this.firstName,
             lastName: this.lastName,

@@ -56,7 +56,7 @@ export default {
         alert("All field required");
       } else {
         try {
-          await axios.post("http://localhost:3000/user/login", {
+          await axios.post("https://contact0858.herokuapp.com/user/login", {
             username: this.username,
             password: this.password,
           });

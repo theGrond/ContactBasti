@@ -78,7 +78,7 @@ export default {
       } else {
         try {
           await axios.put(
-            "http://localhost:3000/contact/" + this.$route.params.id,
+            "https://contact0858.herokuapp.com/contact/" + this.$route.params.id,
             {
               contactId: this.contactId,
               firstName: this.firstName,
@@ -105,7 +105,7 @@ export default {
     console.log(this.$route.params);
     try {
       let res = await axios.get(
-        "http://localhost:3000/contact/" + this.$route.params.id
+        "https://contact0858.herokuapp.com/contact/" + this.$route.params.id
       );
       this.contactId = res.data.contactId;
       this.firstName = res.data.firstName;
